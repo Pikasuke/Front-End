@@ -76,3 +76,4 @@ function Post({ postId, user, username, caption, imageUrl }) {
 }
 
 export default Post
+
