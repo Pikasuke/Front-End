@@ -21,7 +21,38 @@ function Home() {
                     rating={5}
                     image="https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260 " />
             </div>
-           
+            <div className="home__row">
+                <Product
+                    id="112"
+                    title="title"
+                    price={12.90}
+                    rating={5}
+                    image="https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260 " />
+
+                <Product
+                    id="112"
+                    title="title"
+                    price={12.90}
+                    rating={5}
+                    image="https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260 " />
+
+                <Product
+                    id="112"
+                    title="title"
+                    price={12.90}
+                    rating={5}
+                    image="https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260 " />
+            </div>
+            <div className="home__row">
+                <Product
+                    id="112"
+                    title="title"
+                    price={12.90}
+                    rating={5}
+                    image="https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260 " />
+
+
+            </div>
 
         </div>
     )
