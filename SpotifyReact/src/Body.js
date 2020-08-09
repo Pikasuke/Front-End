@@ -1,7 +1,7 @@
 import React from "react";
 import "./body.css";
 import Header from "./Header";
-//import SongRow from "./SongRow";
+import SongRow from "./SongRow";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
@@ -53,7 +53,7 @@ function Body({ spotify }) {
       <Header spotify={spotify} />
 
       <div className="body__info">
-        <img src={discover_weekly?.images[0].url} alt="" />
+        <img src={discover_weekly?.images[0]?.url} alt="" />
         <div className="body__infoText">
           <strong>PLAYLIST</strong>
           <h2>Discover Weekly</h2>
@@ -71,9 +71,9 @@ function Body({ spotify }) {
           <MoreHorizIcon />
         </div>
 
-        {/* {discover_weekly?.tracks.items.map((item) => (
+        {discover_weekly?.tracks.items.map((item) => (
           <SongRow playSong={playSong} track={item.track} />
-        ))} */}
+        ))}
       </div>
     </div>
   );

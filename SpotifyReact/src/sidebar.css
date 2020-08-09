@@ -14,6 +14,7 @@
     height: 70px;
     padding: 10px;
     margin-right: auto;
+    object-fit: contain;
 }
 
 .sidebar__title{
