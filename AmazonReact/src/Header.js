@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Header.css"
 import { Link } from 'react-router-dom'
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
+import Sidebar from './Sidebar';
 
 
-function Header() {
+function Header({tata}) {
     //basket.length
     const [{basket, user}] = useStateValue();
+    const [side, setStyle] = useState(false);
 
     // console.table("clg header basket" + basket)
     const login= ()=> {
@@ -17,8 +19,19 @@ function Header() {
             auth.signOut();
         }
     }
+
+    const affiche =()=>{
+        setStyle(!side)
+        console.log(side)
+    }
+
+    // on execute la props mere en l'appelant dans la fille onClick={tata} car c'est une fonction donc elle s'execute  
     return (
         <nav className="header">
+            <button className="header__hamb" onClick={tata}> &#9776; </button>
+           {/* onClick étant ds un html il refere au js pas de props en composant*/}
+           
+           
             {/* logo */}
             <Link to="/">
                 <img className="header__logo" src="https://wildfiresocial.com/wp-content/uploads/2019/01/amazon-logo-white._cb1509666198_.png" alt="amazon logo" />

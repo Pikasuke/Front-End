@@ -20,8 +20,8 @@ function Login() {
                 history.push('/')
             })
             .catch((e) => alert(e.message));
-
     };
+    
 
     const register = (e) => {
         e.preventDefault()
