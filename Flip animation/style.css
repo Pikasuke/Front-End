@@ -23,8 +23,12 @@ body {
   cursor: pointer;
 }
 
-.text:hover, .box:hover {
+.vert:hover {
   animation: flipV 1s linear;
+}
+
+.horiz:hover {
+  animation: flipH 1s linear;
 }
 
 @keyframes flipV {
@@ -36,7 +40,7 @@ body {
   }
 }
 
-@keyframes flipY {
+@keyframes flipH {
   50% {
     transform: rotateY(180deg);
   }
