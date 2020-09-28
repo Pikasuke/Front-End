@@ -1,0 +1,16 @@
+.villes {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    margin-left:20px;
+    margin-top: 50px;
+    padding: 20px;
+    
+}
+
+.ville{
+    padding: 10px;
+    border: 1px lightgreen solid;
+    cursor: pointer;
+}
