@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">CHAN Tchong-Ming</h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="videoFullscreen.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Welcome To my world </h2>
+            <h3>One of my project</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            <a href="#">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="mail_icon.png" alt="mail icon"></a></li>
+            <li><a href="#"><img src="linkedin_icon.png" alt="linkedin icon"></a></li>
+            <li><a href="#"><img src="github_icon.png" alt="github icon"></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    </div>
+
+<script>
+    const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+</script>
+</body>
+
+</html>
